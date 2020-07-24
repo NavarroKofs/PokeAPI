@@ -1,0 +1,128 @@
+:root {
+    --font: 'Roboto', sans-serif;
+    --white: #FDFEFE;
+    --black: #000000;
+    --mustard: #fc9c04;
+    --gradient-black: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+}
+  
+*,
+*:before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 80%;
+    height: 100vh;
+    font-family: var(--font);
+    margin: auto;
+}
+
+.root {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.video_background {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -100;
+    background-size: cover;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    width: 100%;
+}
+  
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+  
+.header-menu > li > a {
+    text-decoration: none;
+    color: var(--white);  
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.header-menu > li > input {
+    border: 2px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+  
+.header-fig > img {
+    width: 110px;
+    height: 40px;
+}
+
+.pokemonList {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    margin: 50px 0 50px;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 180px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    justify-content: center;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card > a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 20px;
+    position: relative;
+    bottom: 15px;
+}
+
+.card:hover {
+    background-color: rgba(107, 107, 107, 0.336);
+    transform: scale(1.2);
+}
+
+.banner {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 30px auto 30px;
+}
+
+.banner > img {
+    width: 100%;
+}
